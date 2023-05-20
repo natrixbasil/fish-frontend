@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Показания среды</title>
-  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="measurements.css" />
 </head>
 
 <body>
@@ -15,9 +15,26 @@
         <div class="header__main_text">Показания среды</div>
         <div class="sub_title">кислород, температура</div>
         </div>
-        <button class="menu_button">
+        <button class="modal-toggle">
             <img src="./imgs/menu-symbol.svg">
         </button>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <div class="modal-header">
+                    <button class="modal-close">‹</button>
+                    <h2>Рыбы</h2>
+                </div>
+                <div class="modal-content">
+                    <p>Бассейн</p>
+                    <h4 style="color: #0972D3;">Показания среды</h4>
+                    <p>Уведомления</p>
+                    <p>События</p>
+                    <p>Справка</p>
+                    <p>Настройки</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="filters">
@@ -38,4 +55,19 @@
 
         </div>
     </div>
+
+    <div class="choose_measurements">
+        <div class="choose_measurements__title">Кислород (DO), мг/л</div>
+        <div class="choose_measurements__button">
+            Выбрать показания ▼
+        </div>
+        <div class="choose_measurements__tag">Кислород</div>
+        <div class="choose_measurements__tag">PH</div>
+    </div>
+
+    <div class="charts">
+        <img class="charts__element" src="./imgs/Line_chart.png"/>
+        <img class="charts__element" src="./imgs/Line_chart(1).png"/>
+    </div>
 </body>
+
