@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel ='stylesheet' href="style.css" />
+</head>
+<body>
+    <main>
+        <div class="head">
+            <div class="headname">
+                <p>Уведомления</p>
+            </div>
+            
+            <button class="menubtn"></button>
+            <div class="menu" id="menu">
+                <div class="headmenu">
+                    <p>Рыбы</p>
+                </div>
+                <div class="line1"></div>
+                <ul>
+                    <li class="str"><a href="index.html"><span style="color: #414D5C;">Бассейн</span></a></li>
+                    <li class="str"><a href="about.html"><span style="color: #414D5C;">Показания среды</span></a></li>
+                    <li class="str"><a href="alert.html"><span style="color: #0972D3;">Уведомления</span></a></li>
+                    <li class="str"><a href="event.html"><span style="color: #414D5C;">События</span></a></li>
+                </ul>
+                <div class="line2"></div>
+              </div>
+        </div>
+        <script>
+            document.querySelector(".menubtn").addEventListener("click", function() {
+              document.getElementById("menu").classList.toggle("show-menu");
+            });
+          </script>
+        <div class="chose">
+            <div class="headforchose">
+                <p>Фильтры</p>
+                <div class="buttons">
+                    <button class="reset">
+                        Сбросить фильтры
+                    </button>
+                    <button class="add">
+                        + Добавить фильтр
+                    </button>
+                </div>
+            </div>
+            <div class="filters">
+                <div class="filter">
+                    <p>Бассейн 1</p>
+                </div>
+                <div class="filter">
+                    <p>Сейчас</p>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="event">
+                <div class="headforevent">
+                    <div class="name">                            
+                        <p>
+                            Заголовок
+                        </p> 
+                    </div>
+
+                    <div class="filter1">
+                        <p>
+                            Бассейн1
+                        </p>
+                    </div>
+                    <div class="filter2">
+                        <p>
+                            Поломка
+                        </p>
+                    </div>
+                    <div class="filter3">
+                        <p>
+                            Срочно
+                        </p>
+                    </div>
+                    <p class="datatime">
+                        Дата Время
+                    </p>
+                </div>
+                <p class="description">
+                    Описание
+                </p>
+            </div>
+            <div class="event">
+                <div class="headforevent">
+                    <div class="name">                            
+                        <p>
+                            Заголовок
+                        </p> 
+                    </div>
+
+                    <div class="filter1">
+                        <p>
+                            Бассейн2
+                        </p>
+                    </div>
+                    <div class="filter2">
+                        <p>
+                            Стресс
+                        </p>
+                    </div>
+                    <p class="datatime">
+                        Дата Время
+                    </p>
+                </div>
+                <p class="description">
+                    Заголовок
+                </p>
+            </div>
+            <div class="event">
+                <div class="headforevent">
+                    <div class="name">                            
+                        <p>
+                            Заголовок
+                        </p> 
+                    </div>
+
+                    <div class="filter1">
+                        <p>
+                            Бассейн1
+                        </p>
+                    </div>
+                    <div class="filter2">
+                        <p>
+                            Болезнь
+                        </p>
+                    </div>
+                    <p class="datatime">
+                        Дата Время
+                    </p>
+                </div>
+                <p class="description">
+                    Описание
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
