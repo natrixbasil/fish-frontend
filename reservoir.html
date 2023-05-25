@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Просмотр бассейна</title>
+  <link rel="stylesheet" href="reservoir.css" />
+</head>
+
+<header>
+    <h1 class="header__main_text">Бассейн 1</h1>
+    <div class="choose_reservoir">
+        <div class="choose_reservoir__button">
+            Выбрать бассейн ▼
+        </div>
+    </div>
+
+    <button class="modal-toggle">
+        <img src="./imgs/menu-symbol.svg">
+    </button>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <button class="modal-close">‹</button>
+                <h2>Рыбы</h2>
+            </div>
+            <div class="modal-content">
+                <h4 style="color: #0972D3;">Бассейн</h4>
+                <p>Показания среды</p>
+                <p>Уведомления</p>
+                <p>События</p>
+                <p>Справка</p>
+                <p>Настройки</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div>
+        <img class="reservoir_view" src="./imgs/reservoir_veiw.png"/>
+    </div>
+
+    <div class="container">
+        <span class="tag_text">Уведомления</span>
+        <span class="alert_tag">3</span>
+        <span class="tag_text">События</span>
+        <span class="event_tag">2</span>
+    </div>
+
+    <div class="information">
+        <div class="information__main_block">
+            <div class="info__title">Информация</div>
+            <div class="info__subtitles">
+                <div>Вид рыбы</div>
+                <div class="info_main_text">Осётр</div>
+            </div>
+            <div class="info__subtitles">
+                <div>Количество</div>
+                <div class="info_main_text">6</div>
+            </div>
+            <div class="info__subtitles">
+                <div>Возраст</div>
+                <div class="info_main_text">1,5 года</div>
+            </div>
+            <button class="info_edit_button">
+                <img src="./imgs/Icon.svg">
+            </button>
+        </div>
+        <div class="measurements_container">
+            <div class="tag_measurement">t°</div> <span class="temperature_value">10</span>
+            <div class="tag_measurement">O2</div> <span class="oxygen_value">9,5</span>
+            <div class="tag_measurement">pH</div> <span class="pH_value">7,5</span>
+        </div>
+        <div class="behavior_container">
+            <div class="tag_behavior">Тип поведения: норма</div>
+        </div>
+    </div>
+</body>
