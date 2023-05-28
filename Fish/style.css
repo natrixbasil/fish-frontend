@@ -328,12 +328,14 @@ p {
     color: #FFFFFF;
 }
 .addeventform {
+    display: inline-block;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 40px;
     margin-left: 50px;
     margin-top: 20px;
 }
+
 
 .eventinput {
     width: 360px;
@@ -341,7 +343,7 @@ p {
     background: #FFFFFF;
     border: 2px solid #0972D3;
     border-radius: 8px;
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 .eventinputd {
@@ -350,42 +352,47 @@ p {
     background: #FFFFFF;
     border: 2px solid #0972D3;
     border-radius: 8px;
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 .eventname{
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
     line-height: 24px;
-    margin-top: 36px;
+    margin-top: 32px;
 }
 
 .eventtype{
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
     line-height: 24px;
-    margin-top: 36px;
+    margin-top: 32px;
 }
 
 .eventdescript{
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
     line-height: 24px;
-    margin-top: 36px;
+    margin-top: 32px;
 }
 
 .poolevent{
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
     line-height: 24px;
-    margin-top: 36px;
+    margin-top: 32px;
 }
 
 .eventtime{
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
     line-height: 24px;
-    margin-top: 36px;
+    margin-top: 32px;
 }
 
 .save {
@@ -400,4 +407,13 @@ p {
     line-height: 22px;
     color: #F8F8F8;
 
+}
+
+.addform {
+    width: 554px;
+    height: 778px;
+    margin: 106px auto ;
+    background: #F8F8F8;
+    box-shadow: 0px 1px 14px rgba(0, 7, 22, 0.14), 0px 0px 4px rgba(65, 77, 92, 0.2);
+    border-radius: 16px;
 }
