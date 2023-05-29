@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Просмотр бассейна</title>
   <link rel="stylesheet" href="reservoir.css" />
+
 </head>
 
 <header>
@@ -17,26 +18,27 @@
         </div>
     </div>
 
-    <button class="modal-toggle">
-        <img src="./imgs/menu-symbol.svg">
-    </button>
-
-    <div class="modal-overlay">
-        <div class="modal">
-            <div class="modal-header">
-                <button class="modal-close">‹</button>
-                <h2>Рыбы</h2>
-            </div>
-            <div class="modal-content">
-                <h4 style="color: #0972D3;">Бассейн</h4>
-                <p>Показания среды</p>
-                <p>Уведомления</p>
-                <p>События</p>
-                <p>Справка</p>
-                <p>Настройки</p>
-            </div>
+    <main>
+            <button class="menubtn"></button>
+            <div class="menu" id="menu">
+                <div class="headmenu">
+                    <p>Рыбы</p>
+                </div>
+                <div class="line1"></div>
+                <ul>
+                    <li class="str"><a href="reservoir.html"><span style="color: #0972D3;">Бассейн</span></a></li>
+                    <li class="str"><a href="measurements.html"><span style="color: #414D5C;">Показания среды</span></a></li>
+                    <li class="str"><a href="alert.html"><span style="color: #414D5C;">Уведомления</span></a></li>
+                    <li class="str"><a href="event.html"><span style="color: #414D5C;">События</span></a></li>
+                </ul>
+                <div class="line2"></div>
+              </div>
         </div>
-    </div>
+        <script>
+            document.querySelector(".menubtn").addEventListener("click", function() {
+              document.getElementById("menu").classList.toggle("show-menu");
+            });
+          </script>
 </header>
 
 <body>
@@ -45,10 +47,16 @@
     </div>
 
     <div class="container">
-        <span class="tag_text">Уведомления</span>
-        <span class="alert_tag">3</span>
-        <span class="tag_text">События</span>
-        <span class="event_tag">2</span>
+        <span class="tag_text"><a href="event.html">
+            <span style="margin: 50px;">Уведомления</span>
+            <span class="alert_tag">3</span>
+        </a>
+        </span>
+        <span class="tag_text"><a href="alert.html">
+            <span style="margin: 50px;">События</span>
+            <span class="event_tag">2</span>
+        </a>
+        </span>
     </div>
 
     <div class="information">

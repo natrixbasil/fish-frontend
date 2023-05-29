@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Показания среды</title>
+    <link rel="stylesheet" href="measurements.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <div class="header__main_text">Показания среды</div>
+            <div class="sub_title">кислород, температура</div>
+        </div>
+        <button class="menubtn"></button>
+        <div class="menu" id="menu">
+            <div class="headmenu">
+                <p>Рыбы</p>
+            </div>
+            <div class="line1"></div>
+            <ul>
+                <li class="str"><a href="reservoir.html"><span style="color: #414D5C;">Бассейн</span></a></li>
+                <li class="str"><a href="measurements.html"><span style="color: #0972D3;">Показания среды</span></a>
+                </li>
+                <li class="str"><a href="alert.html"><span style="color: #414D5C;">Уведомления</span></a></li>
+                <li class="str"><a href="event.html"><span style="color: #414D5C;">События</span></a></li>
+            </ul>
+            <div class="line2"></div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".menubtn").addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("show-menu");
+        });
+    </script>
+
+    </div>
+    </div>
+
+    <div class="filters">
+        <div class="filers__main_block">
+            <div class="filters__titles">
+                <div class="filters__main_text">Фильтры</div>
+                <div class="sub_title">Детализация, временной интервал</div>
+            </div>
+            <div class="filters__buttons">
+                <div class="filters__button_white">Сбросить фильтры</div>
+                <div class="filters__button_blue filters__button_white">+ Добавить фильтр</div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="tag_text">Бассейн 1</div>
+            <div class="tag_text">Сейчас</div>
+        </div>
+    </div>
+
+    <div class="choose_measurements">
+        <div class="choose_measurements__button">
+            Выбрать показания ▼
+        </div>
+        <div class="choose_measurements__tag">Кислород</div>
+        <div class="choose_measurements__tag">PH</div>
+    </div>
+
+    <div class="charts">
+        <img class="charts__element" src="./imgs/Line_chart.png" />
+        <img class="charts__element" src="./imgs/Line_chart(1).png" />
+    </div>
+</body>
