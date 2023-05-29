@@ -143,12 +143,11 @@ p {
 }
 
 .buttons {
-    display: inline;
+    display: inline-block;
     margin-left: 790px;
 }
 
 .reset {
-    gap: 8px;
     width: 188px;
     height: 34px;
     border: 2px solid #0972D3;
@@ -175,6 +174,14 @@ p {
     line-height: 22px;
     color: #FFFFFF;
     cursor: pointer;
+    margin-right: 20px;
+}
+
+.white {
+    background: #E9EBED;
+    border: 2px solid #0972D3;
+    color: black;
+    font-weight: normal;
 }
 
 .filters {
