@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fish</title>
+    <title>Уведомления</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel ='stylesheet' href="style.css" />
 </head>
@@ -22,8 +22,8 @@
                 </div>
                 <div class="line1"></div>
                 <ul>
-                    <li class="str"><a href="index.html"><span style="color: #414D5C;">Бассейн</span></a></li>
-                    <li class="str"><a href="about.html"><span style="color: #414D5C;">Показания среды</span></a></li>
+                    <li class="str"><a href="reservoir.html"><span style="color: #414D5C;">Бассейн</span></a></li>
+                    <li class="str"><a href="measurements.html"><span style="color: #414D5C;">Показания среды</span></a></li>
                     <li class="str"><a href="alert.html"><span style="color: #0972D3;">Уведомления</span></a></li>
                     <li class="str"><a href="event.html"><span style="color: #414D5C;">События</span></a></li>
                 </ul>
@@ -42,7 +42,7 @@
                     <button class="reset">
                         Сбросить фильтры
                     </button>
-                    <button class="add">
+                    <button class="add" id="add-filter-btn">
                         + Добавить фильтр
                     </button>
                 </div>
@@ -145,12 +145,74 @@
                 <button class="deleteevent">
                     Удалить уведомление
                 </button>
-                <form action="AddAlert.html" target="_blank">
-                    <button class="addevent">
+                    <button id="show-form-btn" class="addevent">
                     + Добавить 
                     </button>
-                </form>
             </div>
+
+            <form id="add-filter" style="display: none;">
+                <div>
+                    <form  action="">
+                        <div class="addeventform">
+                            <p>Внести событие</p>
+                        <div class="eventname">
+                            <p>Название</p>
+                            <input class="eventinput" type="text">
+                        </div>
+                        <div class="eventtype">
+                            <p>Tип</p>
+                            <input class="eventinput" type="text">
+                        </div>
+                        <div class="eventdescript">
+                            <p>Описание</p>
+                            <textarea name="descript" class="eventinputd" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="poolevent">
+                            <p>Бассейн</p>
+                            <input class="eventinput" type="text">
+                        </div>
+                        <div class="eventtime">
+                            <p>Время</p>
+                            <input class="eventinput" type="text">
+                        </div>    
+                       </div>
+                       <button class="save" type="submit">Сохранить</button>
+                    </form>
+                </div>
+    
+                <script>
+                    document.getElementById("add-filter-btn").addEventListener("click", function() {
+                    document.getElementById("add-filter").style.display = "block";});
+                </script>
+
+            <form id="form" style="display: none;">
+                <div class="addform">
+                    <div class="addeventform">
+                        <p>Внести событие</p>
+                    <div class="eventname">
+                        <p>Название</p>
+                        <input class="eventinput" type="text">
+                    </div>
+                    <div class="eventdescript">
+                        <p>Описание</p>
+                        <textarea name="descript" class="eventinputd" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="poolevent">
+                        <p>Бассейн</p>
+                        <input class="eventinput" type="text">
+                    </div>
+                    <div class="eventtime">
+                        <p>Время</p>
+                        <input class="eventinput" type="text">
+                    </div>    
+                    </div>
+                    <button class="save" type="submit">Сохранить</button>
+                </div>
+            </form>
+            <script>
+            document.getElementById("show-form-btn").addEventListener("click", function() {
+            document.getElementById("form").style.display = "block";});
+            </script>
         </div>
     </main>
 </body>
