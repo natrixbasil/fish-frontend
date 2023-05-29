@@ -490,3 +490,12 @@ p {
     top: 480px;
     cursor: pointer;
 }
+
+.selectinput {
+    width: 368px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 2px solid #5F6B7A;
+    border-radius: 8px;
+    margin-top: 4px;
+}
