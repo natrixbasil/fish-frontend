@@ -332,12 +332,17 @@ p {
     cursor: pointer;
 }
 .addeventform {
-    display: inline-block;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 40px;
-    margin-left: 50px;
-    margin-top: 20px;
+    width: 554px;
+    height: 778px;
+    background: #F8F8F8;
+    box-shadow: 0px 1px 14px rgba(0, 7, 22, 0.14), 0px 0px 4px rgba(65, 77, 92, 0.2);
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 5%;
 }
 
 
@@ -400,6 +405,7 @@ p {
 }
 
 .save {
+    position: relative;
     width: 201px;
     height: 34px;
     margin: 52px 50px;
@@ -416,89 +422,27 @@ p {
 .addform {
     width: 554px;
     height: 778px;
-    margin: 106px auto ;
+    padding-top: 2%;
+    padding-left: 2%;
     background: #F8F8F8;
     box-shadow: 0px 1px 14px rgba(0, 7, 22, 0.14), 0px 0px 4px rgba(65, 77, 92, 0.2);
     border-radius: 16px;
-}
-
-.editform {
-    width: 554px;
-    height: 740px;
-    margin: 106px auto ;
-    background: #F8F8F8;
-    box-shadow: 0px 1px 14px rgba(0, 7, 22, 0.14), 0px 0px 4px rgba(65, 77, 92, 0.2);
-    border-radius: 16px;
-}
-
-.sensortag {
-    margin-top: 7px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
-}
-
-.smallight {
-    margin-top: 7px;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 22px;
-    color: #5F6B7A;
-}
-
-.reset {
-    width: 201px;
-    height: 34px;
-    margin: 52px 50px;
-    background: #F8F8F8;
-    border-radius: 16px;
-    border: 2px solid #5F6B7A;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #0972D3;
     position: absolute;
-    left: 360px;
-    cursor: pointer;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
 }
 
-.editcontainer {
-    display: flex;
-    margin-left: 50px;
-    margin-right: 60px;
-}
-
-.sensorform {
-    width: 440px;
-    height: 500px;
-    margin: 106px auto ;
-    background: #F8F8F8;
-    box-shadow: 0px 1px 14px rgba(0, 7, 22, 0.14), 0px 0px 4px rgba(65, 77, 92, 0.2);
-    border-radius: 16px;
-}
-
-.savesensor {
-    width: 201px;
-    height: 34px;
-    margin: 52px 50px;
-    background: #0972D3;
-    border-radius: 16px;
-    border: 2px solid #0972D3;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #F8F8F8;
+.overlay {
     position: absolute;
-    left: 870px;
-    top: 480px;
-    cursor: pointer;
-}
-
-.selectinput {
-    width: 368px;
-    height: 32px;
-    background: #FFFFFF;
-    border: 2px solid #5F6B7A;
-    border-radius: 8px;
-    margin-top: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500%;
+    height: 500%;
+    display: none;
+    background-color: #323742;
+    opacity: 50%;
+    z-index: 2;
 }
