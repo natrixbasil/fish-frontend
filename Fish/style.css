@@ -342,7 +342,7 @@ p {
     width: 360px;
     height: 32px;
     background: #FFFFFF;
-    border: 2px solid #0972D3;
+    border: 2px solid #5F6B7A;
     border-radius: 8px;
     margin-top: 4px;
 }
@@ -351,7 +351,7 @@ p {
     width: 442px;
     height: 143px;
     background: #FFFFFF;
-    border: 2px solid #0972D3;
+    border: 2px solid #5F6B7A;
     border-radius: 8px;
     margin-top: 4px;
 }
@@ -407,6 +407,7 @@ p {
     font-size: 14px;
     line-height: 22px;
     color: #F8F8F8;
+    cursor: pointer;
 }
 
 .addform {
@@ -455,6 +456,7 @@ p {
     color: #0972D3;
     position: absolute;
     left: 360px;
+    cursor: pointer;
 }
 
 .editcontainer {
@@ -486,4 +488,5 @@ p {
     position: absolute;
     left: 870px;
     top: 480px;
+    cursor: pointer;
 }
