@@ -332,12 +332,17 @@ p {
     cursor: pointer;
 }
 .addeventform {
-    display: inline-block;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 40px;
-    margin-left: 50px;
-    margin-top: 20px;
+    width: 554px;
+    height: 778px;
+    background: #F8F8F8;
+    box-shadow: 0px 1px 14px rgba(0, 7, 22, 0.14), 0px 0px 4px rgba(65, 77, 92, 0.2);
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 5%;
 }
 
 
@@ -400,6 +405,7 @@ p {
 }
 
 .save {
+    position: relative;
     width: 201px;
     height: 34px;
     margin: 52px 50px;
@@ -417,8 +423,27 @@ p {
 .addform {
     width: 554px;
     height: 778px;
-    margin: 106px auto ;
+    padding-top: 2%;
+    padding-left: 2%;
     background: #F8F8F8;
     box-shadow: 0px 1px 14px rgba(0, 7, 22, 0.14), 0px 0px 4px rgba(65, 77, 92, 0.2);
     border-radius: 16px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500%;
+    height: 500%;
+    display: none;
+    background-color: #323742;
+    opacity: 50%;
+    z-index: 2;
 }

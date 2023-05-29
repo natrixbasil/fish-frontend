@@ -173,8 +173,7 @@
             </div>
 
             <form id="add-filter" style="display: none;">
-            <div>
-                <form  action="">
+                <div class="addform">
                     <div class="addeventform">
                         <p>Внести событие</p>
                     <div class="eventname">
@@ -197,14 +196,16 @@
                         <p>Время</p>
                         <input class="eventinput" type="text">
                     </div>    
-                   </div>
-                   <button class="save" type="submit">Сохранить</button>
-                </form>
-            </div>
+                    <button class="save" type="submit">Сохранить</button>
+                    </div>
+                        </div>
+                    </form>
+                </div>
 
             <script>
                 document.getElementById("add-filter-btn").addEventListener("click", function() {
-                document.getElementById("add-filter").style.display = "block";});
+                document.getElementById("add-filter").style.display = "block";
+                document.getElementById("overlay").style.display = "block";});
             </script>
 
             <form id="add-event" style="display: none;">
@@ -231,15 +232,18 @@
                         <p>Время</p>
                         <input class="eventinput" type="text">
                     </div>    
-                    </div>
                     <button class="save" type="submit">Сохранить</button>
+                    </div>
                 </div>
             </form>
             <script>
                 document.getElementById("add-event-btn").addEventListener("click", function() {
-                document.getElementById("add-event").style.display = "block";});
+                document.getElementById("add-event").style.display = "block";
+                document.getElementById("overlay").style.display = "block";});
             </script>
         </div>
     </main>
 </body>
+<div id="overlay" class="overlay"></div>
+
 </html>
