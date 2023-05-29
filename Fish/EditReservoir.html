@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditReservoir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel ='stylesheet' href="style.css" />
+</head>
+<body>
+<div class="editcontainer">
+    <div class="editform">
+        <form  action="">
+            <div class="addeventform">
+                <p>Редактирование бассейна</p>
+            <div class="eventname">
+                <p>Количество рыбы</p>
+                <input class="eventinput" type="text" value = 6>
+            </div>
+            <div class="eventtype">
+                <p>Дата завоза рыбы</p>
+                <input class="eventinput" type="date" value="2022-05-29">
+            </div>
+            <div class="eventdescript">
+                <p>Вид рыбы</p>
+                <input class="eventinput" type="text" value = "Осётр сибирский" >
+            </div>
+            <div class="poolevent">
+                <p>Датчики</p>
+                <p class="sensortag">Датчик температуры</p>
+                <select class="eventinput">
+                    <option>TS-123</option>
+                    <option>TS-234</option>
+                    <option>TS-733</option>
+                </select>
+                <p class="sensortag">Датчик кислорода</p>
+                <select class="eventinput">
+                    <option>OS-113</option>
+                    <option>OS-134</option>
+                    <option>OS-833</option>
+                </select>
+                <p class="sensortag">Датчик кислотности</p>
+                <select class="eventinput">
+                    <option>HS-423</option>
+                    <option>HS-134</option>
+                    <option>HS-533</option>
+                </select>
+            </div>  
+           </div>
+           <button class="save" type="submit">Сохранить</button>
+           <button class="reset" type="reset">Сбросить изменения</button>
+        </form>
+    </div>
+    <div class="sensorform">
+        <form action="">
+            <div class="addeventform">
+                <p>Добавить датчик</p>
+                <div class="eventname">
+                    <p>Название</p>
+                    <input class="eventinput" type="text" value = 6>
+                </div>
+                <div class="eventname">
+                    <p>Модель</p>
+                    <input class="eventinput" type="text" value = 6>
+                </div>
+                <div class="eventname">
+                    <p>Показатель</p>
+                    <select class="eventinput">
+                        <option>Температура</option>
+                        <option>Кислород</option>
+                        <option>Кислотность</option>
+                    </select>
+                </div>
+                <button class="savesensor" type="submit">Сохранить</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
